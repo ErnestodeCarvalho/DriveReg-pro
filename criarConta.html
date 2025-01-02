@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo/logo transparente.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/criarConta.css">
+    <link rel="stylesheet" href="css/criarConta_media_queries.css">
+    <title>DriveReg Pro cria conta</title>
+</head>
+<body>
+    
+    <main>
+        <section>
+            <div id="imagem">
+                <h1>Cadastra-te</h1>
+            </div >
+            
+            <div id="formulario">
+                <form action="Cadastro.js" method="post" autocomplete="on">
+                    <div>
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" placeholder="Seu nome" required maxlength="15" autocomplete="name">
+                    </div>
+                    <div>
+                        <label for="isobnom">Sobrenome</label>
+                        <input type="text" name="sobnom" id="isobnom" placeholder="Sobrenome" required maxlength="30" autocomplete="username">
+                    </div>
+                    <div>
+                        <label for="iemal">Email</label>
+                        <input type="email" name="email" id="iemal" placeholder="Seu email" required maxlength="40" autocomplete="email">
+                    </div>
+                    <div>
+                        <label for="iprov">Provincia</label>
+                        <input type="text" name="prov" id="iprov" list="lisprov" placeholder="Sua provincia" autocomplete="home">
+                        <datalist id="lisprov">
+                            <option >Luanda</option>
+                            <option >Benguela</option>
+                            <option >Bengo</option>
+                            <option >Huambo</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="isenha">Sua senha</label>
+                        <input type="password" name="senha" id="isenha" placeholder="Seu senha" required minlength="8" maxlength="30" autocomplete="new-password">
+                    </div>
+                    <div>
+                        <label for="iconsenha">Confirmar senha</label>
+                        <input type="password" name="consenha" id="iconsenha" placeholder="Repete a senha" required minlength="8" maxlength="30" autocomplete="current-password">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                    <a href="login.html">Já tenho uma conta</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo/logo transparente.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/login.css">
+    <title>DriveReg Pro iniciar sessão</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login</h1>
+            <div id="logo">
+                <h2>Sempre presente</h2>
+                <a href="index.html">
+                    <img src="imagens/logo/logo transparente.png" alt="logo" width="200px">
+                </a>
+            </div>
+            <form action="login.js" method="post" autocomplete="on">
+                <div>
+                    <input type="email" name="email" id="iemail" placeholder="Seu email" autocomplete="email" required>
+                </div>
+
+                <div>
+                    <input type="password" name="senha" id="isenha" placeholder="Sua senha" required autocomplete="current-password" minlength="8" maxlength="20">
+                </div>
+
+                <input type="submit" value="Enviar">
+                <p><a href="criarConta.html">Não tenho uma conta</a></p>
+                <a href="#" id="esquecesenha">Esquece minha senha</a>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

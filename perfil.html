@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="imagens/logo/logo transparente.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/celular_media_queries.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <title>DriveReg pro perfil</title>
+</head>
+<body onclick="mudarT()">
+
+    <header>
+        <div id="parte1">
+            <ol>
+                <li >
+                    <p id="cabecalho_contacto">
+                        <span class="material-symbols-outlined">
+                        settings_phone
+                        </span>
+                        +244 934 222 086
+                    </p>
+                </li>
+
+                <li id="perfil">
+                        <a href="perfil.html"><span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <h6>perfil</h6>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+        <div id="parte2">
+            <h1>
+                <a href="index.html">
+                    <img src="imagens/logo/logo principal.png" alt="Logo principal" id="logo_principal"> <p>DriveReg <span><i>Pro</i></span></p>
+                </a>
+            </h1>
+
+            <menu>
+                <span class="material-symbols-outlined" onclick="motrarLista()" id="menu_logo">
+                    menu
+                </span>
+                
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            
+                <nav id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="alugerdecarros.html">Rent-a-car</a></li>
+                
+                        <li><a href="criarConta.html">Criar conta</a></li>
+                        <li><a href="contacto.html">Contactos</a></li>
+                        <li><a href="#">Sair</a></li>
+                    </ul>
+                </nav>
+            </menu>
+        </div>
+    </header>
+<footer>
+
+        <div  class="footer_localizacao">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3941.4583981713336!2d13.200743531737338!3d-8.929836605414021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTUnNDcuNCJTIDEzwrAxMicxMi4wIkU!5e0!3m2!1spt-PT!2sao!4v1732912208311!5m2!1spt-PT!2sao" width="470" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" > </iframe>
+        
+            
+
+            <div>
+                <div >
+                    <a href=""><img src="imagens/telemoveis_e_redes/logo-facebook.jpg" alt="logo-facebook"></a>
+                    <a href=""><img src="imagens/telemoveis_e_redes/logo-instagram.jpg" alt="logo-instagram"></a>
+                    <a href="#"><img src="imagens/telemoveis_e_redes/WHATSAPP.jpeg" alt=""></a>
+                </div>
+                <p>
+                    008-0907-0769
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">
+                        pin_drop
+                        </span>  Golf 2 antes do Hospita geral na rua da Molgue
+                
+                </p>
+                <p>
+                    <span class="material-symbols-outlined">
+                        settings_phone
+                    </span>   934 222 086 / 928 282 339
+                </p>
+            </div>
+            
+        </div>
+        <p id="copyright">&copy;Copyright 2024-2025</p>
+    </footer>
+
+    <script>
+        function mudarT() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block' 
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function motrarLista() {
+            if(menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+
+    <script src="js/scriptPerfil.js"></script>
+</body>
+</html>
